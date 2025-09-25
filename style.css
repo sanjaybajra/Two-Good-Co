@@ -1,0 +1,477 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*::selection{
+    background-color: black;
+    color:#fff;
+}
+body{
+    background-color: #f7f7f7;
+}
+#nav{
+    
+    width: 100%;
+    
+    z-index: 10;
+    position: fixed;
+    padding: 23px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
+#nav-part1{
+
+    height: 82px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    display: block;
+}
+#nav #nav-part2 #links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#333;
+   font-weight: 600;
+   font-size: 14px;
+   margin: 0px 20px;
+}
+#nav #nav-part2 #icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    border-radius: 50%;
+    position: fixed;
+ transform: translate(-50%,-50%) scale(0);
+
+}
+#page1{
+     min-height: 100vh;
+     width: 100%;
+     margin-top: 8vw;
+     position: relative;
+     padding:0 1vw;
+     padding-top: 15vh;
+ 
+}
+#page1 h1{
+    font-size: 15vw;
+   
+    text-transform: uppercase;
+    font-family:serif;
+    line-height: 12vw;
+    letter-spacing: -8px;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    position:relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding:4vw;
+    background-color: black;
+    color:#fff;
+font-size: 2.3vw;
+opacity: 0;
+scale:0;
+text-transform: uppercase;
+position:fixed;
+border-radius: 50%;
+padding:3vw 2vw;
+font-family:serif;
+}
+#para{
+    height: 80vh;
+    width: 100%;
+    padding: 6vh 5vw;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+#para h1{
+    font-size: 90px;
+line-height: 80px;
+font-weight: 600;
+font-style: bold;
+
+}
+#para p{
+    height: 50%;
+    width: 15%;
+    margin-left: 470px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#para h2{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#para #foot{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1.5px solid #333;
+}
+#page2{
+  min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:5vw 3vw;
+
+    justify-content: space-between;
+}
+#page2 .elem{
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    margin-bottom: 3vw;
+    position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale:1.1;
+}
+
+#page2 .elem .dets{
+    height: 40px;
+    border-radius: 50px;
+    width: 80%;
+    position: absolute;
+    z-index: 6;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(232, 182, 145);
+  
+    text-align: center;
+    gap:40px;
+   
+}
+#page2 .elem .dets .picture{
+    height:160px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+visibility: hidden;
+}
+#page2 .elem .dets .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    height: 40px;
+}
+#page2 .elem .dets .box :hover{
+    cursor: pointer;
+ 
+    
+}
+#page3{
+   min-height: 130vh;
+    width: 100%;
+    background-color:#f7f7f7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+#page3 .para1{
+    height: 10%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+#page3 .para1 h1{
+    font-size: 20px;
+    font-weight: 100;
+}
+#page3 .para1 #price{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+position: relative;
+  display: inline-block;
+  align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+.child img{
+    height: 100%;
+    width: 100%;
+object-fit: contain;
+   
+}
+
+#page4{
+    height: 30vh;
+    width: 100%;
+}
+ #foot2{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0 5vw;
+    margin-top: 20vh;
+
+    
+}
+#foot2 .p2{
+    font-size: 20px;
+    font-weight: 600;
+    color:#333;
+    text-transform: uppercase;
+    line-height: 25px;
+    border-bottom: 1.5px solid #333;
+}
+@media (max-width:600px){
+    #nav{
+    
+    width: 100%;
+    
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+#links{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+    display: none;
+}
+#nav-part1{
+
+    height: 67px;
+    
+   
+    overflow: hidden;
+}
+#nav-part1 svg{
+    display: block;
+    height: 67px;
+
+    
+}
+#icons{
+    padding: 7px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
+
+#nav #nav-part2 #icons i{
+    font-size: 15px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+    #page1{
+        
+        min-height: 70vh;
+ width:100%;
+     padding:0 3vw;
+     padding-top: 25vh;
+}
+    #page1 h1{
+    font-size: 15.5vw;
+    line-height: 12vw;
+    letter-spacing: -3px;
+}
+#video-container{
+    margin-top: 3vw;
+    height: 25vh;
+   
+}
+#video-container #play{
+    padding: 9.5vw 7.2vw;
+    color:#fff;
+font-size: 4.5vw;
+position:absolute;
+top:50%;
+left: 50%;
+border-radius: 50%;
+padding:3vw 2vw;
+font-family:serif;
+opacity: 1;
+scale:1;
+transform: translate(-50%,-50%);
+}
+#page2{
+  min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:5vw 4vw;
+flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#page2 .elem{
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 4vw;
+    overflow: hidden;
+}
+#page2 .elem .dets{
+    height: 40px;
+    border-radius: 50px;
+    width: 80%;
+    position: absolute;
+    z-index: 6;
+   
+    background-color:rgb(232, 182, 145);
+}
+#page3{
+    min-height: 30vh;
+    width: 100%;
+    background-color:#f7f7f7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.child{
+    height: 57vh;
+    width: 88vw;
+    padding: 15vw;
+position: relative;
+  display: inline-block;
+  align-items: center;
+    justify-content: center;
+   
+}
+.child img{
+    height: 90%;
+   width:100% ;
+}
+#para{
+    height: 60vh;
+    width: 100%;
+    padding: 6vh 5vw;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+#para h1{
+    font-size: 45px;
+line-height: 40px;
+font-weight: 700;
+font-style: bold;
+
+}
+#para p{
+    height: 50%;
+    width: 49%;
+    margin-left: 85px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+#para h2{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+#para #foot{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1.5px solid #333;
+}
+#page3 .para1 h1{
+    font-size: 20px;
+    font-weight: 100;
+}
+#page3 .para1 #price{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+ #foot2{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 5vw;
+    margin-bottom: 20px;
+
+    
+}
+#foot2 .p2{
+    font-size: 12px;
+    font-weight: 600;
+    color:#333;
+    text-transform: uppercase;
+    line-height: 25px;
+    border-bottom: 1.2px solid #333;
+}
+#page4{
+    height: 10vh;
+    width: 100%;
+}
+}
