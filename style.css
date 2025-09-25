@@ -433,7 +433,8 @@ font-style: bold;
 #para h2{
     text-decoration: underline;
     cursor: pointer;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
+    font-size: 2vh;
 }
 #para #foot{
     height: 3vh;
