@@ -430,11 +430,8 @@ font-style: bold;
     margin-top: 20px;
     font-size: 18px;
 }
-#para h2{
-    text-decoration: underline;
-    cursor: pointer;
-    margin-bottom: 2vh;
-    font-size: 2vh;
+ #para h2{
+  visibility: hidden;
 }
 #para #foot{
     height: 3vh;
